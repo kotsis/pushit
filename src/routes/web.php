@@ -11,4 +11,4 @@
 |
 */
 
-Route::get('/admin/push', 'PushitController@index');
+Route::get('/admin/push', 'Kotsis\\Pushit\\PushitController@index');

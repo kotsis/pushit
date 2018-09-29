@@ -1,8 +1,8 @@
 <?php
 
-namespace Kotsis\Pushit\App\Http\Controllers;
+namespace Kotsis\Pushit;
 
-use App\Http\Controllers;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class PushitController extends Controller
