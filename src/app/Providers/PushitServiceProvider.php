@@ -46,7 +46,7 @@ class PushitServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return [];
+        return [Kotsis\Pushit\PushitController::class];
     }
 }
 

@@ -5,4 +5,4 @@ Laravel push notification manager. Full backend management of subscriptions and 
 
 To get started with pushit just run in your Laravel application:
 
-    composer require kotsis/pushit
+    composer require kmak/pushit
