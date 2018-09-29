@@ -13,7 +13,7 @@ class PushitServiceProvider extends ServiceProvider
      *
      * @var bool
      */
-    protected $defer = true;
+    //protected $defer = true;
 
     /**
      * Boot the service provider.
@@ -44,9 +44,9 @@ class PushitServiceProvider extends ServiceProvider
      *
      * @return array
      */
-    public function provides()
-    {
-        return [Kotsis\Pushit\PushitController::class];
-    }
+    //public function provides()
+    //{
+    //    return [Kotsis\Pushit\PushitController::class];
+    //}
 }
 
