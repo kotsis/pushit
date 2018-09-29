@@ -46,6 +46,7 @@ class PushitServiceProvider extends ServiceProvider
      */
     public function provides()
     {
+        return [];
     }
 }
 
