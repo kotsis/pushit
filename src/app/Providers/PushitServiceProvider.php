@@ -22,11 +22,11 @@ class PushitServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadRoutesFrom(__DIR__.'../../routes/web.php');
+        $this->loadRoutesFrom(__DIR__.'/../../routes/web.php');
 
         //php artisan vendor:publish after installation of package...
         $this->publishes([
-            __DIR__.'../../config/pushit.php' => config_path('pushit.php'),
+            __DIR__.'/../../config/pushit.php' => config_path('pushit.php'),
         ]);
     }
 
