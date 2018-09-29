@@ -1,0 +1,27 @@
+{
+    "name": "kmak/pushit",
+    "description": "Laravel push notification manager. Full backend management of subscriptions and notification sending to subscribers.",
+    "require": {
+	"php": "^7.1.3",
+        "minishlink/web-push": "^4.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Konstantinos Katsamakas",
+            "email": "kmak@1funkybit.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Kotsis\\Pushit\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kotsis\\Pushit\\PushitServiceProvider"
+            ]
+        }
+    }
+}
