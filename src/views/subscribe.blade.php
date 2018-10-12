@@ -1,3 +1,3 @@
 @push('scripts')
-    <script src="/kmakpushit.js"></script>
+    <script src="/vendor/kmak/pushit/main.js"></script>
 @endpush
