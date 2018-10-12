@@ -9,7 +9,7 @@ class PushitController extends Controller
 {
     //
     public function index(){
-        return 'Hello World';
+        return view('kmak/pushit::admin');
     }
 }
 
