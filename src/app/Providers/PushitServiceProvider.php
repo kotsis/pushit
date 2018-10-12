@@ -23,11 +23,16 @@ class PushitServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->loadRoutesFrom(__DIR__.'/../../routes/web.php');
+        $this->loadViewsFrom(__DIR__.'/../../views', 'kmak/pushit');
 
         //php artisan vendor:publish after installation of package...
         $this->publishes([
             __DIR__.'/../../config/pushit.php' => config_path('pushit.php'),
         ]);
+
+        $this->publishes([
+            __DIR__.'/../../assets' => public_path('vendor/kmak/pushit'),
+        ], 'public');
     }
 
     /**
