@@ -2,7 +2,8 @@
     "name": "kmak/pushit",
     "description": "Laravel push notification manager. Full backend management of subscriptions and notification sending to subscribers.",
     "require": {
-	"php": "^7.1.3",
+        "php": "^7.1.3",
+        "openssl": "*",
         "minishlink/web-push": "^4.0"
     },
     "license": "MIT",
