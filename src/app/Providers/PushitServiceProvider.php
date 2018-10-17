@@ -33,6 +33,12 @@ class PushitServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../../assets' => public_path('vendor/kmak/pushit'),
         ], 'public');
+
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                Kotsis\Pushit\VapidInitCommand::class,
+            ]);
+        }
     }
 
     /**
