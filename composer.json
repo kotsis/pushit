@@ -3,7 +3,7 @@
     "description": "Laravel push notification manager. Full backend management of subscriptions and notification sending to subscribers.",
     "require": {
         "php": "^7.1.3",
-        "openssl": "*",
+        "ext-openssl": "*",
         "minishlink/web-push": "^4.0"
     },
     "license": "MIT",
