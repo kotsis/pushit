@@ -3,6 +3,7 @@
 namespace Kotsis\Pushit;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Artisan;
 
 class VapidInitCommand extends Command
 {
