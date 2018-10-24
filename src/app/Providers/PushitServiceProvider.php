@@ -36,7 +36,7 @@ class PushitServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->commands([
-                Kotsis\Pushit\VapidInitCommand::class,
+                VapidInitCommand::class,
             ]);
         }
     }
