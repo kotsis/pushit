@@ -89,11 +89,11 @@ class VapidInitCommand extends Command
 
         //We remove new lines and BEGIN/END lines , we only keep the single line base64 encoded section
         $pubKey = str_replace("-----BEGIN PUBLIC KEY-----", "", $pubKey);
-		$pubKey = str_replace("-----END PUBLIC KEY-----", "", $pubKey);
+        $pubKey = str_replace("-----END PUBLIC KEY-----", "", $pubKey);
         $pubKey = str_replace("\n", "", $pubKey);
 
         $privKey = str_replace("-----BEGIN EC PRIVATE KEY-----", "", $privKey);
-		$privKey = str_replace("-----END EC PRIVATE KEY-----", "", $privKey);
+        $privKey = str_replace("-----END EC PRIVATE KEY-----", "", $privKey);
         $privKey = str_replace("\n", "", $privKey);
 
         $str = preg_replace($patternPriv, "'privkey' => '$privKey'", $str);
