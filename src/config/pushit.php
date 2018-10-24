@@ -7,15 +7,16 @@ return [
     | Some Pushit config values go here
     |--------------------------------------------------------------------------
     |
-    | Test
+    | VAPID private and public key are stored here
     |
-    |
+    | You can initialize the key by running:
+    | $php artisan vapid:init
     |
     */
 
     'VAPID' => [
-        'somekey' => 'test1',
-        'otherkey' => 'test2',
+        'privkey' => '',
+        'pubkey' => '',
     ],
 
 ];
